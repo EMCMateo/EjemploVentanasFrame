@@ -28,22 +28,27 @@ public class Main {
         Panel miPanel = new Panel();
         Panel miPanel2 = new Panel();
         miPanel.setLayout(posicionamientoSecuencial);
-
+        Panel miPanelPrincipal = new Panel();
         miPanel.add(buttonA);
         miPanel.add(buttonB);
         miPanel2.add(buttonC);
         miPanel2.add(buttonD);
-        v3.setLayout(new BorderLayout());
+        miPanelPrincipal.add(miPanel);
+        miPanelPrincipal.add(miPanel2);
+        v3.add(miPanelPrincipal);
+
+
+
+
         Panel panelIzquierdo = new Panel();
         panelIzquierdo.setBackground(Color.RED);
 
         Panel panelDerecho = new Panel();
         panelDerecho.setBackground(Color.BLUE);
-        panelDerecho.setLayout(BorderLayout.WEST);
 
 
-        v3.add(panelDerecho);
-        v3.add(panelIzquierdo);
+        v2.add(panelDerecho);
+        v2.add(panelIzquierdo);
 
 
         int cont = 10;
